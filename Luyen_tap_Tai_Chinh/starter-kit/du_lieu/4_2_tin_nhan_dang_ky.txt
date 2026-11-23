@@ -1,0 +1,35 @@
+BẢNG MÃ GÓI HỘI THẢO TÀI CHÍNH
+CB – Gói Cơ Bản: hội thảo quản lý chi tiêu và tiết kiệm gia đình
+DT – Gói Đầu Tư: hội thảo đầu tư chứng khoán và quỹ mở cho người mới
+VIP – Gói VIP: bàn tròn tư vấn tài chính trực tiếp cùng chuyên gia
+
+QUY TẮC CHUẨN HOÁ (5 quy tắc)
+1. ma_goi lấy theo bảng mã gói hội thảo.
+2. ngay_hoi_thao dạng YYYY-MM-DD; tin nhắn không ghi năm thì lấy năm 2026; không có ngày cụ thể thì null.
+3. Khách không nhắc trẻ em thì tre_em là 0 và mọi khách đi cùng đều tính là nguoi_lon.
+4. hang_ve chỉ nhận "thuong", "vip" hoặc null.
+5. ghi_chu chỉ ghi yêu cầu đặc biệt về chỗ ngồi, hỗ trợ di chuyển hoặc suất ăn/tài liệu; không có thì null.
+
+======================================================
+HAI TIN NHẮN MẪU ĐÃ XỬ LÝ ĐÚNG (dùng làm ví dụ)
+======================================================
+
+Tin nhắn mẫu 1:
+Đặt giúp mình 2 vé VIP buổi hội thảo tài chính ngày 15/11/2026, gồm 2 người lớn và 1 bé đi cùng. Cần bàn ngồi gần lối đi.
+Kết quả đúng:
+{"ma_goi": "VIP", "ngay_hoi_thao": "2026-11-15", "nguoi_lon": 2, "tre_em": 1, "hang_ve": "vip", "ghi_chu": "bàn ngồi gần lối đi"}
+
+Tin nhắn mẫu 2:
+Cho mình đăng ký một suất Gói Cơ Bản, ngày nào cũng được, mình đi một mình.
+Kết quả đúng:
+{"ma_goi": "CB", "ngay_hoi_thao": null, "nguoi_lon": 1, "tre_em": 0, "hang_ve": "thuong", "ghi_chu": null}
+
+======================================================
+BA TIN NHẮN CẦN XỬ LÝ
+======================================================
+
+TN1: Mình muốn đăng ký Gói Đầu Tư buổi ngày 20/12 nha, đi 2 người lớn với 1 bé 9 tuổi, lấy hạng vé thường.
+
+TN2: Cho 3 người đăng ký Gói Cơ Bản buổi hội thảo ngày 10/01/2027 ạ. Có một người dùng xe lăn cần lối đi riêng.
+
+TN3: Hội thảo tài chính tháng 12 còn chỗ không ạ? Nhóm em 4 người lớn, có một anh mắt kém cần ngồi bàn đầu gần màn hình chiếu, lấy gói VIP.
